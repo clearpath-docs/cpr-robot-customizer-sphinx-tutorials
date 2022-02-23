@@ -1,2 +1,0 @@
-Keeping PLATFORM Updated
-=========================

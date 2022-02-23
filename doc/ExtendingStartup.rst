@@ -1,2 +1,0 @@
-Extending PLATFORM Startup
-===========================
