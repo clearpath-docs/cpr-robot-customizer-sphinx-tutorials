@@ -1,5 +1,5 @@
-# cpr-platform-sphinx-tutorials
-Tutorial for CPR Platforms.
+# generic-robot-sphinx-tutorials
+Tutorial for CPR Generic Robot.
 
 ## Setup
     sudo apt-get install texlive-full texlive-xetex texmaker python-pip latexmk
