@@ -5,6 +5,8 @@ The Generic Robot ROS package by Clearpath Robotics provides an easy-to-use inte
 
 The sensors supported in this package are commonly used by Clearpath Robotics to customize mobile robotic platforms.
 
+The example files used throughout this tutorial can be found `here <https://github.com/jyang-cpr/generic_robot/tree/noetic-devel/example>`_.
+
 .. toctree::
     :maxdepth: 0
     :caption: Overview
