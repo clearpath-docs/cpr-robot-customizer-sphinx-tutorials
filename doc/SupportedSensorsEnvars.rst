@@ -80,20 +80,8 @@ Environment Variables        Default Values          Other Values       Descript
 Cameras
 ----------
 
-- Teledyne FLIR Blackfly
 - Intel RealSense D400 Series
 - Intel RealSense L515
-
-===========================  ======================  =================  ===========================
-Environment Variables        Default Values          Other Values       Description
-===========================  ======================  =================  ===========================
-``CPR_BLACKFLY``             ``0``                   ``1``              Enable/disable sensor
-``CPR_BLACKFLY_PARENT``      ``base_link``           Any link           Mount link for sensor
-``CPR_BLACKFLY_XYZ``         ``"0 0 0"``             Any XYZ            Position of sensor
-``CPR_BLACKFLY_RPY``         ``"0 0 0"``             Any RPY            Orientation of sensor
-``CPR_BLACKFLY_SERIAL``      ``0``                   Any serial no.     Serial number of sensor
-``CPR_BLACKFLY_CALIB``       ``0``                   ``1``              If calibration file exists
-===========================  ======================  =================  ===========================
 
 ===========================  ======================  =================  ===========================
 Environment Variables        Default Values          Other Values       Description
