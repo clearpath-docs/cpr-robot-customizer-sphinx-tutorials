@@ -1,5 +1,5 @@
-Installing Software
-====================
+Installing
+===========
 
 There are two ways to install the Generic Robot ROS package on your robot, both of which are covered in this section.
 

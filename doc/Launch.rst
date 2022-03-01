@@ -1,7 +1,7 @@
 Launch
 =======
 
-Another one of the features of the Generic Robot ROS package is automatically launching the driver launch files of the sensors attached to your robot.
+One of the features of the Generic Robot ROS package is automatically launching the driver launch files of the sensors attached to your robot.
 
 To use this feature, you will need to create a ``.launch`` file that loads your robot's ``.urdf.xacro`` file into the ``robot_description`` parameter, and launches ``robot_state_publisher`` to broadcast your robot's ``tf`` transforms to ROS. Furthermore, if your robot has any non-fixed joints (i.e. wheels), your ``.launch`` file will also need to launch the ``joint_state_publisher`` to broadcast your robot's joints information. 
 

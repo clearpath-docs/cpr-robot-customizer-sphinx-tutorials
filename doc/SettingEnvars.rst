@@ -1,11 +1,11 @@
 Setting Environment Variables
 ==============================
 
-Once you have completed the :doc:`<Installing>`, :doc:`<URDF>`, and :doc:`<Launch>` tutorial sections, you are now ready to use the Environment Variable interface provided by the Generic Robot ROS package!
+Once you have completed the :doc:`Installing <Installing>`, :doc:`URDF <URDF>`, and :doc:`Launch <Launch>` tutorial sections, you are now ready to use the environment variables interface provided by the Generic Robot ROS package!
 
 The complete list of supported sensors and environment variables can be found :doc:`here <SupportedSensorsEnvars>`.
 
-In this section of the tutorial, we will go through an example usage of the Environment Variable interface for a Hokuyo UST-10LX 2D laser scanner.
+In this section of the tutorial, we will go through an example usage of the environment variables interface for a Hokuyo UST-10LX 2D laser scanner.
 
 1. Enable the Hokuyo UST-10LX 2D laser scanner. In terminal, run:
 
@@ -40,10 +40,12 @@ In this section of the tutorial, we will go through an example usage of the Envi
 
   roslaunch generic_robot description.launch
 
-If your Hokuyo UST-10LX 2D laser scanner is connected to your robot's computer and with the IP address configured correctly, then launching the ``.launch`` file should automatically launch the Hokuyo UST-10LX 2D laser scanner's driver. You can verify this by checking the output in your terminal, and also by checking the 2D laser scan data currently being published in ROS. In terminal, run:
+6. If your Hokuyo UST-10LX 2D laser scanner is connected to your robot's computer and with the IP address configured correctly, then launching the ``.launch`` file should automatically launch the Hokuyo UST-10LX 2D laser scanner's driver. You can verify this by checking the output in your terminal, and also by checking the 2D laser scan data currently being published in ROS. In terminal, run:
 
 .. code-block:: bash
 
   rostopic echo /scan
 
-The state of your robot (based on your robot's model) will also be published to ROS; however, you currently will not be able to visually verify this.
+The state of your robot (based on your robot's model) will also be published to ROS; however, you currently will not be able to visually verify this. Please see the next section :doc:`Visualizing <Visualizing>` to learn how to visualize your robot's model, the various sensors attached to it, and the sensors' data in ``rviz``.
+
+7. The environment variables set in steps 1. to 4. will only be set in that terminal session, meaning upon closing that terminal session, those environment variables will be unset! In order to keep the desired values of environment variables persistent, you can simply add the ``export ENVAR=VALUE`` lines to your robot's ``~/.bashrc`` file; this way, those environment variables will be set upon booting the robot's computer, and will remain persistent in any terminal session.

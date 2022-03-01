@@ -22,5 +22,10 @@ The example files used throughout this tutorial can be found `here <https://gith
     Installing
     URDF
     Launch
+
+.. toctree::
+    :maxdepth: 0
+    :caption: Using Environment Variables
+
     SettingEnvars
     Visualizing
