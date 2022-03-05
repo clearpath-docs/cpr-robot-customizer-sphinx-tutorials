@@ -1,7 +1,7 @@
 Supported Sensors and Environment Variables
 ============================================
 
-Below is a list of sensors currently supported by the Generic Robot ROS package, as well as the configurable environment variables for each sensor.
+Below is a list of sensors currently supported by the Robot Customizer ROS package, as well as the configurable environment variables for each sensor.
 
 2D Lasers
 ----------

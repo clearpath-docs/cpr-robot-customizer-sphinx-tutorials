@@ -1,22 +1,22 @@
-Visualizing
-============
+Visualizing with Rviz
+======================
 
-One of the features of the Generic Robot ROS package is visualizing your robot's model, the various sensors sensors attached to it, and the sensors' data in ``rviz``.
+After setting up your robot and adding the sensors you want, you can now visualize your robot's updated model in ``rviz``. In addition, if you have the physical sensors and included the launching of their drivers, you can also visualize your sensors' data.
 
-To use this feature, simply launch the ``view_model.launch`` file provided in the Generic Robot ROS package and provide the ``description_launch`` argument with the path to your robot's ``.launch`` file. The ``view_model.launch`` file can be found `here <https://github.com/jyang-cpr/generic_robot/blob/noetic-devel/launch/view_model.launch>`_.
+The Robot Customizer ROS package provides a useful ``.launch`` file for visualization in ``rviz``. This file is called ``rviz.launch``, and can be found `here <https://github.com/clearpathrobotics/cpr_robot_customizer/blob/noetic-devel/launch/rviz.launch>`_.
 
-For example, you can view the model of the example ``generic_robot.urdf.xacro`` robot along with the Hokuyo UST-10LX 2D laser scanner attached to it. In terminal, run:
+To use it, simply launch ``rviz.launch`` and provide the ``description_launch`` argument with the path to your robot's ``.launch`` file. For example, you can visualize the model of the example ``generic_robot.urdf.xacro`` robot along with the SICK LMS1xx 2D laser scanner attached to it. In terminal, run:
 
 .. code-block:: bash
 
-  roslaunch generic_robot view_model description_launch:=/home/administrator/catkin_ws/src/generic_robot/example/description.launch
+  roslaunch cpr_robot_customizer rviz.launch description_launch:=/home/administrator/catkin_ws/src/cpr_robot_customizer/example/description.launch
 
-Once ``rviz`` loads, you should see the model of the example generic robot, along with the Hokuyo UST-10LX 2D laser scanner mounted ontop of the ``box`` link.
+Once ``rviz`` loads, you should see the model of the example generic robot, along with the SICK LMS1xx 2D laser scanner mounted ontop of the ``box`` link.
 
-.. image:: images/generic_robot_rviz.png
-    :alt: Generic Robot Rviz
+.. image:: images/rviz.png
+    :alt: Robot Customizer Rviz
 
-In addition, you can also add the ``/scan`` ROS topic to ``rviz`` to see the 2D laser scans from the Hokuyo UST-10LX 2D laser scanner.
+In addition, if you have the physical sensor setup, you can also add the ``/scan`` ROS topic to ``rviz`` to see the 2D laser scans from the SICK LMS1xx 2D laser scanner.
 
-.. image:: images/generic_robot_scan_rviz.png
-    :alt: Generic Robot Scan Rviz
+.. image:: images/rviz_scan.png
+    :alt: Robot Customizer Scan Rviz

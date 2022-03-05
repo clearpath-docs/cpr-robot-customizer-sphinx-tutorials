@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <package>
-  <name>generic_robot_tutorials</name>
+  <name>cpr_robot_customizer_tutorials</name>
   <version>0.0.0</version>
-  <description>Tutorial for CPR Generic Robot.</description>
+  <description>Tutorials for Clearpath Robotics' Robot Customizer ROS package
+</description>
   <maintainer email="jyang@clearpathrobotics.com">Joey Yang</maintainer>
 
   <license>BSD</license>

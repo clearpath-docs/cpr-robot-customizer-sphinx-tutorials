@@ -1,5 +1,5 @@
-# generic-robot-sphinx-tutorials
-Tutorial for CPR Generic Robot.
+# cpr-robot-customizer-sphinx-tutorials
+Tutorials for Clearpath Robotics' Robot Customizer ROS package.
 
 ## Setup
     sudo apt-get install texlive-full texlive-xetex texmaker python-pip latexmk

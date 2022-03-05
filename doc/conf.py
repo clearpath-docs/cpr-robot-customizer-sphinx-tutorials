@@ -20,7 +20,7 @@ extlinks = {
 source_suffix = '.rst'
 master_doc = 'index'
 
-project = u'Generic Robot Tutorials'
+project = u'Robot Customizer Tutorials'
 copyright = u'2020, Clearpath Robotics'
 
 # Get version number from package.xml.
@@ -31,7 +31,7 @@ release = version
 html_theme = 'clearpath-sphinx-theme'
 html_theme_path = ["."]
 
-htmlhelp_basename = 'generic_robot_tutorialsdoc'
+htmlhelp_basename = 'cpr_robot_customizer_tutorialsdoc'
 templates_path = ['./templates']
 html_static_path = ['./clearpath-sphinx-theme/static']
 
@@ -85,6 +85,6 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'GenericRobotTutorials.tex', 'Generic Robot Tutorials',
+    (master_doc, 'RobotCustomizerTutorials.tex', 'Robot Customizer Tutorials',
      'Joey Yang', 'manual'),
 ]
